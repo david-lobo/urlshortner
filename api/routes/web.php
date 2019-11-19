@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/{id}', 'ShowUrl');
+
+Route::resource('/', 'UrlController')->only([
+    'store'
+]);
