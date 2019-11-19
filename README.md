@@ -34,6 +34,23 @@ To create the JS bundle and run the watcher run:
 npm run watch
 ~~~
 
+To serve the react app:
+~~~
+node_modules/.bin/webpack-dev-server --mode=development
+~~~
+
+To install the composer dependencies:
+~~~
+composer install
+~~~
+
+
+To run the Laravel backend app:
+~~~
+php artisan migrate
+php artisan serve
+~~~
+
 You can use whatever npm modules and PHP framework you are comfortable with. 
 
 For extra points: Style the frontend with Sass
